@@ -39,9 +39,7 @@ This is my personal portfolio website where I showcase who I am, what I do, and 
 
 ## 🛠️ Tech Stack
 
-- **HTML5** — Markup and structure
-- **CSS3** — Styling and responsive design
-- **JavaScript** — Interactivity and dynamic content
+- **HTML5** — Markup, structure, and styling
 
 ---
 
@@ -78,16 +76,10 @@ Or use the **Live Server** extension in VS Code for the best development experie
 ```
 shikha-portfolio/
 ├── index.html        # Main HTML file
-├── css/
-│   └── style.css     # Stylesheet
-├── js/
-│   └── script.js     # JavaScript file
 ├── assets/
 │   └── images/       # Images and icons
 └── README.md
 ```
-
-> *(Adjust the structure above to match your actual project layout)*
 
 ---
 
@@ -96,7 +88,6 @@ shikha-portfolio/
 This site is deployed using **GitHub Pages**.
 
 To deploy your own version:
-
 1. Push your code to a GitHub repository
 2. Go to **Settings → Pages**
 3. Under **Source**, select the `main` branch and `/ (root)` folder
@@ -109,8 +100,8 @@ To deploy your own version:
 Feel free to reach out!
 
 - **GitHub:** [@Shikha18Sahu](https://github.com/Shikha18Sahu)
-- **LinkedIn:** *(Add your LinkedIn URL here)*
-- **Email:** *(Add your email here)*
+- **LinkedIn:** https://www.linkedin.com/in/shikha-sahu-3b003b285/
+- **Email:**= sahushikhauptu@gmail.com
 
 ---
 
