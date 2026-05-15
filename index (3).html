@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shikha Sahu | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800&family=Instrument+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav id="navbar">
+  <a href="#hero" class="logo"><span>SS</span></a>
+  <div class="nav-links">
+    <a href="#projects" class="nav-link">PROJECTS</a>
+    <a href="#skills" class="nav-link">SKILLS</a>
+    <a href="#experience" class="nav-link">EXPERIENCE</a>
+    <a href="#contact" class="nav-link">CONTACT</a>
+  </div>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-bg"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
+
+  <div class="hero-inner">
+    <!-- Left -->
+    <div>
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        <span class="status-text">Available for opportunities</span>
+      </div>
+
+      <h1 class="hero-name">
+        <span class="line1">Shikha</span>
+        <span class="line2">Sahu</span>
+      </h1>
+
+      <div class="hero-role">
+        <span id="typewriter"></span><span class="blink">_</span>
+      </div>
+
+      <div class="hero-bio">
+        Passionate Full Stack Developer specializing in MERN Stack, AI/ML applications, and IoT systems. I love turning complex problems into clean, efficient solutions — from responsive UIs to intelligent backend systems.
+      </div>
+
+      <div class="hero-stats">
+        <div>
+          <div class="stat-val">350+</div>
+          <div class="stat-label">Problems Solved</div>
+        </div>
+        <div>
+          <div class="stat-val">9.08</div>
+          <div class="stat-label">CGPA</div>
+        </div>
+        <div>
+          <div class="stat-val">5★</div>
+          <div class="stat-label">HackerRank</div>
+        </div>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="https://pdflink.to/resume_resume/" target="_blank" class="btn-primary"><span>View Resume ↗</span></a>
+        <a href="#projects" class="btn-outline">&lt;/&gt; See Projects</a>
+      </div>
+    </div>
+
+    <!-- Right: Code card -->
+    <div class="code-card">
+      <!-- Floating badge top -->
+      <div class="float-badge top-right">
+        <div style="width:32px;height:32px;border-radius:8px;background:var(--cyan-dim);border:1px solid rgba(82,196,255,0.3);display:flex;align-items:center;justify-content:center;font-size:1rem">🔌</div>
+        <div>
+          <div style="font-family:var(--font-mono);font-size:0.58rem;color:var(--text-muted)">Specialization</div>
+          <div style="font-weight:700;font-size:0.82rem;color:#fff">IoT & AI/ML</div>
+        </div>
+      </div>
+
+      <!-- Floating badge bottom -->
+      <div class="float-badge bot-left">
+        <div style="width:8px;height:8px;border-radius:50%;background:#10b981;box-shadow:0 0 8px #10b981;animation:pulse 2s ease-in-out infinite"></div>
+        <div>
+          <div style="font-size:0.6rem;color:var(--text-muted)">Based in</div>
+          <div style="font-weight:600;font-size:0.8rem;color:#fff">Gorakhpur, India</div>
+        </div>
+      </div>
+
+      <div class="code-card-inner">
+        <div class="code-header">
+          <div class="dot-r"></div><div class="dot-y"></div><div class="dot-g"></div>
+          <span class="code-filename">developer.js</span>
+        </div>
+        <div class="code-body">
+          <pre><span class="kw">const</span> <span class="fn">developer</span> = {
+  name:       <span class="str">"Shikha Sahu"</span>,
+  role:       <span class="str">"Full Stack Developer"</span>,
+  passion:    <span class="str">"AI-powered IoT"</span>,
+  stack: [
+    <span class="str">"React"</span>, <span class="str">"Node.js"</span>,
+    <span class="str">"TensorFlow"</span>, <span class="str">"MongoDB"</span>
+  ],
+  university: <span class="str">"MMMUT Gorakhpur"</span>,
+  gpa:        <span class="num">9.08</span>,
+  openToWork: <span class="num">true</span>,
+};</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll hint -->
+  <div style="position:absolute;bottom:28px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;color:var(--text-muted)">
+    <span style="font-family:var(--font-mono);font-size:0.58rem;letter-spacing:0.2em">SCROLL</span>
+    <div style="width:1px;height:28px;background:linear-gradient(to bottom,var(--text-muted),transparent)"></div>
+  </div>
+</section>
+
+<!-- ══════════ PROJECTS ══════════ -->
+<section id="projects" class="section">
+  <div class="section-inner">
+    <span class="section-label reveal">SELECTED WORK</span>
+    <h2 class="section-title reveal reveal-d1">Featured Projects</h2>
+    <p class="section-sub reveal reveal-d2">Hover a card to flip it and explore details. Real-world systems blending AI/ML intelligence and modern web development.</p>
+
+    <div class="projects-grid">
+
+      <!-- Project 1: AI Resume Builder -->
+      <div class="proj-wrapper reveal reveal-d1">
+        <div class="proj-card-3d">
+          <!-- Front -->
+          <div class="proj-front proj-face" style="border-color:rgba(244,114,182,0.2)">
+            <div class="proj-visual" style="border-bottom:1px solid rgba(244,114,182,0.12);background:linear-gradient(135deg,#1a0028,#0a0f1e)">
+              <div class="proj-visual-ring" style="width:200px;height:200px;border-color:rgba(244,114,182,0.1)"></div>
+              <div class="proj-visual-ring" style="width:130px;height:130px;border-color:rgba(244,114,182,0.18)"></div>
+              <span class="proj-icon">📄</span>
+              <div class="proj-tag-badge" style="background:rgba(244,114,182,0.14);border:1px solid rgba(244,114,182,0.4);color:var(--pink)">AI / FULL STACK</div>
+            </div>
+            <div class="proj-content">
+              <h3 class="proj-title">AI Resume Builder</h3>
+              <p class="proj-desc">AI-powered resume builder enabling users to create ATS-friendly resumes with real-time customization and smart content generation.</p>
+              <div class="proj-tags">
+                <span class="tag">MongoDB</span><span class="tag">Express.js</span><span class="tag">React.js</span><span class="tag">Gemini AI</span>
+              </div>
+              <div class="proj-links">
+                <a href="https://github.com/Shikha18Sahu/AI-Resume-Builder" target="_blank" class="proj-link">⌥ Code</a>
+                <a href="https://ai-resume-builder-lake-three.vercel.app/" target="_blank" class="proj-link">↗ Live Demo</a>
+              </div>
+            </div>
+            <div class="flip-hint">HOVER TO FLIP ↻</div>
+          </div>
+          <!-- Back -->
+          <div class="proj-back proj-face">
+            <div>
+              <div class="proj-back-badge" style="background:rgba(244,114,182,0.14);border:1px solid rgba(244,114,182,0.4);color:var(--pink)">AI / FULL STACK</div>
+              <div class="proj-back-title">AI Resume Builder</div>
+            </div>
+            <div class="proj-feat"><div class="proj-feat-dot" style="background:var(--pink)"></div><div class="proj-feat-text">Gemini AI for resume optimization & ATS score enhancement</div></div>
+            <div class="proj-feat"><div class="proj-feat-dot" style="background:var(--pink)"></div><div class="proj-feat-text">PDF parsing, live preview & shareable resume links</div></div>
+            <div class="proj-feat"><div class="proj-feat-dot" style="background:var(--pink)"></div><div class="proj-feat-text">Template customization with image processing via ImageKit</div></div>
+            <div class="proj-feat"><div class="proj-feat-dot" style="background:var(--pink)"></div><div class="proj-feat-text">Secure auth, cloud storage & responsive MERN architecture</div></div>
+            <div class="proj-back-actions">
+              <a href="https://ai-resume-builder-lake-three.vercel.app/" target="_blank" class="back-btn back-btn-primary">↗ Live Demo</a>
+              <a href="https://github.com/Shikha18Sahu/AI-Resume-Builder" target="_blank" class="back-btn back-btn-secondary">⌥ Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: LMS -->
+      <div class="proj-wrapper reveal reveal-d2">
+        <div class="proj-card-3d">
+          <div class="proj-front proj-face" style="border-color:rgba(168,85,247,0.2)">
+            <div class="proj-visual" style="border-bottom:1px solid rgba(168,85,247,0.12);background:linear-gradient(135deg,#160024,#0a0f1e)">
+              <div class="proj-visual-ring" style="width:200px;height:200px;border-color:rgba(168,85,247,0.1)"></div>
+              <div class="proj-visual-ring" style="width:130px;height:130px;border-color:rgba(168,85,247,0.18)"></div>
+              <span class="proj-icon">🎓</span>
+              <div class="proj-tag-badge" style="background:rgba(168,85,247,0.14);border:1px solid rgba(168,85,247,0.4);color:var(--purple)">FULL STACK</div>
+            </div>
+            <div class="proj-content">
+              <h3 class="proj-title">LMS Platform</h3>
+              <p class="proj-desc">Scalable learning management system enabling educators to manage interactive courses with video lectures, analytics and payments.</p>
+              <div class="proj-tags">
+                <span class="tag">MongoDB</span><span class="tag">Express.js</span><span class="tag">React.js</span><span class="tag">Stripe</span>
+              </div>
+              <div class="proj-links">
+                <a href="https://github.com/Shikha18Sahu/LMS_" target="_blank" class="proj-link">⌥ Code</a>
+                <a href="https://lms-frontend-wheat-one.vercel.app/" target="_blank" class="proj-link">↗ Live Demo</a>
+              </div>
+            </div>
+            <div class="flip-hint">HOVER TO FLIP ↻</div>
+          </div>
+          <div class="proj-back proj-face">
+            <div>
+              <div class="proj-back-badge" style="background:rgba(168,85,247,0.14);border:1px solid rgba(168,85,247,0.4);color:var(--purple)">FULL STACK</div>
+              <div class="proj-back-title">LMS Platform</div>
+            </div>
+            <div class="proj-feat"><div class="proj-feat-dot" style="background:var(--purple)"></div><div class="proj-feat-text">Clerk authentication & Stripe payments integration</div></div>
+            <div class="proj-feat"><div class="proj-feat-dot" style="background:var(--purple)"></div><div class="proj-feat-text">Search, filtering, ratings & fully responsive UI</div></div>
+            <div class="proj-feat"><div class="proj-feat-dot" style="background:var(--purple)"></div><div class="proj-feat-text">Educator dashboards for analytics & earnings tracking</div></div>
+            <div class="proj-feat"><div class="proj-feat-dot" style="background:var(--purple)"></div><div class="proj-feat-text">Video lecture management with progress tracking</div></div>
+            <div class="proj-back-actions">
+              <a href="https://lms-frontend-wheat-one.vercel.app/" target="_blank" class="back-btn back-btn-primary">↗ Live Demo</a>
+              <a href="https://github.com/Shikha18Sahu/LMS_" target="_blank" class="back-btn back-btn-secondary">⌥ Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: ChatGPT UI Clone -->
+      <div class="proj-wrapper reveal reveal-d3">
+        <div class="proj-card-3d">
+          <div class="proj-front proj-face" style="border-color:rgba(52,211,153,0.2)">
+            <div class="proj-visual" style="border-bottom:1px solid rgba(52,211,153,0.1);background:linear-gradient(135deg,#00130d,#0a0f1e)">
+              <div class="proj-visual-ring" style="width:200px;height:200px;border-color:rgba(52,211,153,0.1)"></div>
+              <div class="proj-visual-ring" style="width:130px;height:130px;border-color:rgba(52,211,153,0.18)"></div>
+              <span class="proj-icon">🤖</span>
+              <div class="proj-tag-badge" style="background:rgba(52,211,153,0.12);border:1px solid rgba(52,211,153,0.4);color:var(--green)">FRONTEND / UI</div>
+            </div>
+            <div class="proj-content">
+              <h3 class="proj-title">ChatGPT UI Clone</h3>
+              <p class="proj-desc">Modern ChatGPT-like conversational interface with clean design, smooth UX, and real-time chat interaction built with Next.js.</p>
+              <div class="proj-tags">
+                <span class="tag">Next.js</span><span class="tag">React.js</span><span class="tag">Tailwind CSS</span><span class="tag">Vercel</span>
+              </div>
+              <div class="proj-links">
+                <a href="https://github.com/Shikha18Sahu/chatting-with-chatgpt" target="_blank" class="proj-link">⌥ Code</a>
+                <a href="https://chatting-with-chatgpt.vercel.app/" target="_blank" class="proj-link">↗ Live Demo</a>
+              </div>
+            </div>
+            <div class="flip-hint">HOVER TO FLIP ↻</div>
+          </div>
+          <div class="proj-back proj-face">
+            <div>
+              <div class="proj-back-badge" style="background:rgba(52,211,153,0.12);border:1px solid rgba(52,211,153,0.4);color:var(--green)">FRONTEND / UI</div>
+              <div class="proj-back-title">ChatGPT UI Clone</div>
+            </div>
+            <div class="proj-feat"><div class="proj-feat-dot" style="background:var(--green)"></div><div class="proj-feat-text">Interactive chat UI with dynamic message rendering</div></div>
+            <div class="proj-feat"><div class="proj-feat-dot" style="background:var(--green)"></div><div class="proj-feat-text">Next.js, React and component-based architecture</div></div>
+            <div class="proj-feat"><div class="proj-feat-dot" style="background:var(--green)"></div><div class="proj-feat-text">Deployed on Vercel with responsive minimal design</div></div>
+            <div class="proj-feat"><div class="proj-feat-dot" style="background:var(--green)"></div><div class="proj-feat-text">Clean sidebar navigation and conversation history</div></div>
+            <div class="proj-back-actions">
+              <a href="https://chatting-with-chatgpt.vercel.app/" target="_blank" class="back-btn back-btn-primary">↗ Live Demo</a>
+              <a href="https://github.com/Shikha18Sahu/chatting-with-chatgpt" target="_blank" class="back-btn back-btn-secondary">⌥ Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ SKILLS ══════════ -->
+<section id="skills" class="section" style="background:linear-gradient(180deg,transparent 0%,rgba(82,196,255,0.018) 50%,transparent 100%)">
+  <div class="section-inner">
+    <span class="section-label reveal">TECHNICAL ARSENAL</span>
+    <h2 class="section-title reveal reveal-d1">Skills & Technologies</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card reveal" onmouseover="this.style.borderColor='rgba(82,196,255,0.3)';this.style.boxShadow='0 8px 30px rgba(82,196,255,0.08)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.boxShadow='none'">
+        <div class="skill-card-header"><div class="skill-icon" style="background:var(--cyan-dim);border:1px solid rgba(82,196,255,0.3)">💬</div><div class="skill-cat" style="color:var(--cyan)">Languages</div></div>
+        <div class="skill-tags"><span class="tag">C</span><span class="tag">C++</span><span class="tag">Python</span><span class="tag">JavaScript</span></div>
+      </div>
+
+      <div class="skill-card reveal reveal-d1" onmouseover="this.style.borderColor='rgba(168,85,247,0.3)';this.style.boxShadow='0 8px 30px rgba(168,85,247,0.08)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.boxShadow='none'">
+        <div class="skill-card-header"><div class="skill-icon" style="background:var(--purple-dim);border:1px solid rgba(168,85,247,0.3)">🎨</div><div class="skill-cat" style="color:var(--purple)">Frontend</div></div>
+        <div class="skill-tags"><span class="tag">React.js</span><span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">Tailwind CSS</span><span class="tag">Bootstrap</span></div>
+      </div>
+
+      <div class="skill-card reveal reveal-d2" onmouseover="this.style.borderColor='rgba(251,191,36,0.3)';this.style.boxShadow='0 8px 30px rgba(251,191,36,0.07)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.boxShadow='none'">
+        <div class="skill-card-header"><div class="skill-icon" style="background:rgba(251,191,36,0.1);border:1px solid rgba(251,191,36,0.3)">⚙️</div><div class="skill-cat" style="color:var(--amber)">Backend</div></div>
+        <div class="skill-tags"><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">REST APIs</span></div>
+      </div>
+
+      <div class="skill-card reveal reveal-d3" onmouseover="this.style.borderColor='rgba(52,211,153,0.3)';this.style.boxShadow='0 8px 30px rgba(52,211,153,0.08)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.boxShadow='none'">
+        <div class="skill-card-header"><div class="skill-icon" style="background:var(--green-dim);border:1px solid rgba(52,211,153,0.3)">🧠</div><div class="skill-cat" style="color:var(--green)">AI/ML Tools</div></div>
+        <div class="skill-tags"><span class="tag">TensorFlow</span><span class="tag">NumPy</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span><span class="tag">IBM Watsonx</span></div>
+      </div>
+
+      <div class="skill-card reveal reveal-d1" onmouseover="this.style.borderColor='rgba(244,114,182,0.3)';this.style.boxShadow='0 8px 30px rgba(244,114,182,0.08)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.boxShadow='none'">
+        <div class="skill-card-header"><div class="skill-icon" style="background:var(--pink-dim);border:1px solid rgba(244,114,182,0.3)">🔌</div><div class="skill-cat" style="color:var(--pink)">IoT Systems</div></div>
+        <div class="skill-tags"><span class="tag">Arduino</span><span class="tag">Raspberry Pi</span><span class="tag">NodeMCU</span><span class="tag">Sensors</span><span class="tag">Circuit Design</span></div>
+      </div>
+
+      <div class="skill-card reveal reveal-d2" onmouseover="this.style.borderColor='rgba(139,92,246,0.3)';this.style.boxShadow='0 8px 30px rgba(139,92,246,0.08)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.boxShadow='none'">
+        <div class="skill-card-header"><div class="skill-icon" style="background:rgba(139,92,246,0.12);border:1px solid rgba(139,92,246,0.3)">🗄️</div><div class="skill-cat" style="color:#8b5cf6">Databases</div></div>
+        <div class="skill-tags"><span class="tag">MongoDB</span><span class="tag">MySQL</span></div>
+      </div>
+
+      <div class="skill-card reveal reveal-d3" onmouseover="this.style.borderColor='rgba(6,182,212,0.3)';this.style.boxShadow='0 8px 30px rgba(6,182,212,0.08)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.boxShadow='none'">
+        <div class="skill-card-header"><div class="skill-icon" style="background:rgba(6,182,212,0.12);border:1px solid rgba(6,182,212,0.3)">🛠️</div><div class="skill-cat" style="color:#06b6d4">Tools</div></div>
+        <div class="skill-tags"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span><span class="tag">Postman</span></div>
+      </div>
+
+      <div class="skill-card reveal reveal-d1" onmouseover="this.style.borderColor='rgba(167,139,250,0.3)';this.style.boxShadow='0 8px 30px rgba(167,139,250,0.08)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)';this.style.boxShadow='none'">
+        <div class="skill-card-header"><div class="skill-icon" style="background:rgba(167,139,250,0.12);border:1px solid rgba(167,139,250,0.3)">📐</div><div class="skill-cat" style="color:#a78bfa">Core CS</div></div>
+        <div class="skill-tags"><span class="tag">DSA</span><span class="tag">OOPs</span><span class="tag">Algorithms</span><span class="tag">Computer Networks</span><span class="tag">Information Network Security</span></div>
+      </div>
+
+    </div>
+
+    <!-- Coding Platforms -->
+    <div style="margin-top:3.5rem">
+      <span class="section-label reveal">CODING PLATFORMS</span>
+      <div class="platform-grid">
+        <div class="platform-card reveal" style="border:1px solid rgba(251,191,36,0.2);background:rgba(251,191,36,0.04)">
+          <span class="platform-icon">⚡</span>
+          <div>
+            <div class="platform-name">LeetCode</div>
+            <div class="platform-stat" style="color:var(--amber)">350+ Problems Solved</div>
+          </div>
+        </div>
+        <div class="platform-card reveal reveal-d1" style="border:1px solid rgba(168,85,247,0.2);background:rgba(168,85,247,0.04)">
+          <span class="platform-icon">👨‍🍳</span>
+          <div>
+            <div class="platform-name">CodeChef</div>
+            <div class="platform-stat" style="color:var(--purple)">Pupil · 1365 Rating</div>
+          </div>
+        </div>
+        <div class="platform-card reveal reveal-d2" style="border:1px solid rgba(52,211,153,0.2);background:rgba(52,211,153,0.04)">
+          <span class="platform-icon">★</span>
+          <div>
+            <div class="platform-name">HackerRank</div>
+            <div class="platform-stat" style="color:var(--green)">5 Stars</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ EXPERIENCE ══════════ -->
+<section id="experience" class="section">
+  <div class="section-inner">
+    <span class="section-label reveal">PROFESSIONAL JOURNEY</span>
+    <h2 class="section-title reveal reveal-d1">Experience & Credentials</h2>
+
+    <div class="exp-layout">
+
+      <!-- Timeline -->
+      <div>
+        <h3 style="font-size:1rem;font-weight:700;color:var(--text-muted);margin-bottom:1.5rem;font-family:var(--font-mono);letter-spacing:0.1em">WORK EXPERIENCE</h3>
+        <div class="timeline">
+          <div class="timeline-line"></div>
+
+          <!-- IBM -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot" style="color:var(--cyan);background:var(--cyan)"></div>
+            <div class="exp-card" onmouseover="this.style.borderColor='rgba(82,196,255,0.3)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)'">
+              <div class="exp-meta">📅 Mar 2026 – Apr 2026 · Virtual</div>
+              <div class="exp-role">AI Strategy & Business Intelligence Intern</div>
+              <div class="exp-company" style="color:var(--cyan)">IBM SkillsBuild × CSRBOX × AICTE</div>
+              <ul class="exp-bullets">
+                <li class="exp-bullet"><span class="bullet-dot" style="color:var(--cyan)">•</span>Built AI solutions using Python, Google Colab, IBM Watsonx & Granite — focusing on Generative & Agentic AI systems</li>
+                <li class="exp-bullet"><span class="bullet-dot" style="color:var(--cyan)">•</span>Designed AI-powered workflows, chatbots, and automation pipelines via hands-on projects</li>
+                <li class="exp-bullet"><span class="bullet-dot" style="color:var(--cyan)">•</span>Developed & deployed an AI Agent aligned with UN Sustainable Development Goals</li>
+                <li class="exp-bullet"><span class="bullet-dot" style="color:var(--cyan)">•</span>Gained exposure to AI architecture, deployment, and scalable intelligent systems</li>
+              </ul>
+              <div class="exp-cert"><a href="https://pdflink.to/intercertificate/" target="_blank" style="color:var(--cyan)">🔗 View Certificate</a></div>
+            </div>
+          </div>
+
+          <!-- IoT -->
+          <div class="timeline-item reveal reveal-d1">
+            <div class="timeline-dot" style="color:var(--purple);background:var(--purple)"></div>
+            <div class="exp-card" onmouseover="this.style.borderColor='rgba(168,85,247,0.3)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)'">
+              <div class="exp-meta">📅 Mar 2026 – Apr 2026 · On-site</div>
+              <div class="exp-role">IoT Intern</div>
+              <div class="exp-company" style="color:var(--purple)">Emertxe Information Technologies</div>
+              <ul class="exp-bullets">
+                <li class="exp-bullet"><span class="bullet-dot" style="color:var(--purple)">•</span>Built IoT projects using C, microcontrollers, and embedded systems</li>
+                <li class="exp-bullet"><span class="bullet-dot" style="color:var(--purple)">•</span>Applied SDLC methodology to design, develop and test hardware-based solutions</li>
+                <li class="exp-bullet"><span class="bullet-dot" style="color:var(--purple)">•</span>Gained hands-on experience in sensors, interfacing and real-time data processing</li>
+              </ul>
+              <div class="exp-cert"><a href="https://pdflink.to/iot_intern_certificate/" target="_blank" style="color:var(--purple)">🔗 View Certificate</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Credentials -->
+      <div>
+        <h3 style="font-size:1rem;font-weight:700;color:var(--text-muted);margin-bottom:1.5rem;font-family:var(--font-mono);letter-spacing:0.1em">CERTIFICATIONS & AWARDS</h3>
+
+        <div class="cert-list">
+          <div class="cert-card reveal" onmouseover="this.style.borderColor='rgba(66,133,244,0.35)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)'">
+            <div class="cert-icon" style="background:rgba(66,133,244,0.12);border:1px solid rgba(66,133,244,0.3)">🏅</div>
+            <div>
+              <div class="cert-name">Gen AI Study Jams 2024</div>
+              <div class="cert-issuer" style="color:#4285f4">Google Cloud · <a href="https://www.cloudskillsboost.google/public_profiles/77457937-6277-4289-9c3d-bb61a8428cc7" target="_blank" style="color:#4285f4">Verify ↗</a></div>
+            </div>
+          </div>
+          <div class="cert-card reveal reveal-d1" onmouseover="this.style.borderColor='rgba(31,112,193,0.35)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)'">
+            <div class="cert-icon" style="background:rgba(31,112,193,0.12);border:1px solid rgba(31,112,193,0.3)">🏅</div>
+            <div>
+              <div class="cert-name">AI-ML Specialization</div>
+              <div class="cert-issuer" style="color:#1f70c1">IBM SkillsBuild · <a href="https://ibb.co/dsDpGZ5s" target="_blank" style="color:#1f70c1">Verify ↗</a></div>
+            </div>
+          </div>
+          <div class="cert-card reveal reveal-d2" onmouseover="this.style.borderColor='rgba(255,153,0,0.35)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)'">
+            <div class="cert-icon" style="background:rgba(255,153,0,0.12);border:1px solid rgba(255,153,0,0.3)">🏆</div>
+            <div>
+              <div class="cert-name">Hack On with Amazon 2025</div>
+              <div class="cert-issuer" style="color:#ff9900">Amazon · <span style="color:var(--text-muted)">Qualified among 1,800+</span></div>
+            </div>
+          </div>
+          <div class="cert-card reveal reveal-d3" onmouseover="this.style.borderColor='rgba(255,60,60,0.35)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.07)'">
+            <div class="cert-icon" style="background:rgba(255,60,60,0.1);border:1px solid rgba(255,60,60,0.25)">🏆</div>
+            <div>
+              <div class="cert-name">Adobe India Hackathon</div>
+              <div class="cert-issuer" style="color:#ff4444">Adobe · <span style="color:var(--text-muted)">Cleared coding round</span></div>
+            </div>
+          </div>
+        </div>
+
+        <span class="section-label reveal" style="margin-bottom:0.8rem;display:flex">EDUCATION</span>
+        <div class="edu-card reveal reveal-d1">
+          <div class="edu-degree">B.Tech — ECE (Internet of Things)</div>
+          <div class="edu-uni">Madan Mohan Malaviya University of Technology, Gorakhpur</div>
+          <div class="edu-meta">
+            <span>2023 – 2027</span>
+            <span style="color:var(--green)">GPA: 9.08 / 10</span>
+          </div>
+          <div class="edu-courses">Courses: Computer Networks · DSA · AI-ML · Advanced IoT · Info Network Security · C/C++/Java/Python</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CONTACT ══════════ -->
+<section id="contact">
+  <div class="contact-bg"></div>
+  <div class="contact-inner">
+    <span class="section-label reveal" style="justify-content:center">GET IN TOUCH</span>
+    <h2 class="contact-title reveal reveal-d1">Let's Work<br><span class="gradient-word">Together</span></h2>
+    <p class="contact-sub reveal reveal-d2">Currently open for Software Development and IoT/AI/ML roles.<br>Let's build something intelligent and impactful.</p>
+
+    <div class="contact-ctas reveal reveal-d3">
+      <a href="https://mail.google.com/mail/?view=cm&to=sahushikhauptu@gmail.com" target="_blank" class="btn-primary" style="border-radius:50px"><span>✉ sahushikhauptu@gmail.com</span></a>
+      <a href="https://www.linkedin.com/in/shikha-sahu-3b003b285/" target="_blank" class="btn-outline" style="border-radius:50px">in LinkedIn</a>
+    </div>
+
+    <div class="contact-info reveal">
+      <span>📍 Gorakhpur, Uttar Pradesh, India</span>
+      <span style="opacity:0.3">|</span>
+      <a href="https://github.com/Shikha18Sahu" target="_blank" style="color:var(--text-muted);text-decoration:none" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='var(--text-muted)'">⌥ GitHub</a>
+    </div>
+
+    <div class="contact-links reveal">
+      <a href="#projects" class="contact-link">View Projects</a>
+      <a href="https://leetcode.com/u/shikha_18_sahu/" target="_blank" class="contact-link">LeetCode Profile</a>
+      <a href="https://www.hackerrank.com/profile/sahushikhauptu" target="_blank" class="contact-link">HackerRank</a>
+      <a href="https://www.codechef.com/users/shikha18_sahu" target="_blank" class="contact-link">CodeChef</a>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Shikha Sahu · Crafted with passion</footer>
+
+<!-- External JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
